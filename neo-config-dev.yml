@@ -3,3 +3,13 @@ eureka:
   client:
     service-url:
       defaultZone : http://localhost:8002/eureka/
+spring:
+  datasource:
+    username: root
+    password: Root@123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.129.134:3306/demo_01?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations: classpath:map/*Map.xml
+  type-aliases-package: com.common.bean.City
