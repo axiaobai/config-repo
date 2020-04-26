@@ -1,1 +1,5 @@
 neo.hello: hello im dev
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8002/eureka/
