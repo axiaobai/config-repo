@@ -13,3 +13,6 @@ spring:
 mybatis:
   mapper-locations: classpath:map/*Map.xml
   type-aliases-package: com.common.bean.City
+feign:
+  hystrix:
+    enabled: true
