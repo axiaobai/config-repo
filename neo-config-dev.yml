@@ -12,3 +12,10 @@ mybatis:
 feign:
   hystrix:
     enabled: true
+turbine:
+  appConfig: customer,product
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: "'default'"
+  instanceUrlSuffix: /hystrix.stream  #没有的话会出现异常
+  combine-host-port: true
