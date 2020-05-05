@@ -19,3 +19,11 @@ turbine:
   clusterNameExpression: "'default'"
   instanceUrlSuffix: /hystrix.stream  #没有的话会出现异常
   combine-host-port: true
+zuul:
+  routes:
+    product:
+      path: /demo/**
+      serviceId: product
+    customer:
+      path: /demo/**
+      serviceId: customer
